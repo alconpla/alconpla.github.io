@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <title>Portfolio Alejandro Contreras</title>
-    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +10,34 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
     
-    <!-- FontAwesome JS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
     
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">    
     
-    <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <style>
+        /* Estilos simples para el botón de idioma */
+        .lang-switch-btn {
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        .lang-switch-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        /* Clase de utilidad para ocultar contenido */
+        .d-none {
+            display: none !important;
+        }
+    </style>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146524111-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -33,41 +49,54 @@
 </head> 
 
 <body>
-    <!-- ******HEADER****** --> 
     <header class="header">
-        <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="" />
+        <div class="container clearfix">   
+            <div class="float-right" style="margin-left: 15px;">
+                <button onclick="toggleLanguage()" class="lang-switch-btn">
+                    <span class="lang-es">EN</span> <span class="lang-en d-none">ES</span>
+                </button>
+            </div>
+
+            <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="Alejandro Contreras" />
             <div class="profile-content float-left">
                 <h1 class="name">Alejandro Contreras</h1>
-                <h2 class="desc">Cross-platform developer and Web Design & Development student</h2>   
+                
+                <h2 class="desc">
+                    <span class="lang-es">Desarrollador Web Full Stack y WordPress</span>
+                    <span class="lang-en d-none">Full Stack & WordPress Developer</span>
+                </h2>   
+                
                 <ul class="social list-inline">              
-                    <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li> -->
                     <li class="list-inline-item"><a href="https://github.com/AlexLeandoer/"><i class="fab fa-github-alt"></i></a></li>    
-                    <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>   
-                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                 -->
                 </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="mailto:alconpla@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div class="container sections-wrapper">
+            </div><a class="btn btn-cta-primary float-right" href="mailto:alconpla@gmail.com" target="_blank">
+                <i class="fas fa-paper-plane"></i> 
+                <span class="lang-es">Contáctame</span>
+                <span class="lang-en d-none">Contact Me</span>
+            </a>                  
+        </div></header><div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-lg-8 col-12">
+                
                 <section class="about section">
                     <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
+                        <h2 class="heading">
+                            <span class="lang-es">Sobre Mí</span>
+                            <span class="lang-en d-none">About Me</span>
+                        </h2>
                         <div class="content">
-                            <p>
-                                I am a guy who loves development, technology, comics, movies and videogames. You will always find me on my computer doing something related to the things I mentioned earlier. On the other hand I love cooking and eating and traveling to try new flavors. I will stop here because I prefer that others discover who I am.</p>
-                         
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-
-                <section class="latest section">
+                            <p class="lang-es">
+                                Soy un chico al que le encanta el desarrollo, la tecnología, los cómics, el cine y los videojuegos. Siempre me encontrarás en mi ordenador haciendo algo relacionado con las cosas que mencioné anteriormente. Por otro lado, me encanta cocinar, comer y viajar para probar nuevos sabores. Me detendré aquí porque prefiero que los demás descubran quién soy.
+                            </p>
+                            <p class="lang-en d-none">
+                                I am a guy who loves development, technology, comics, movies and videogames. You will always find me on my computer doing something related to the things I mentioned earlier. On the other hand I love cooking and eating and traveling to try new flavors. I will stop here because I prefer that others discover who I am.
+                            </p>
+                        </div></div></section><section class="latest section">
                     <div class="section-inner">
-                        <h2 class="heading">Projects</h2>
+                        <h2 class="heading">
+                            <span class="lang-es">Proyectos</span>
+                            <span class="lang-en d-none">Projects</span>
+                        </h2>
                         <div class="content">
                             
                             <div class="item row">
@@ -76,210 +105,208 @@
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://github.com/AlexLeandoer/Proyecto-Trueques" target="_blank">Service Trading Social Network (PHP)</a></h3>
-                                    <p class="mb-2">Final project for the Web Design & Development Higher Course. A PHP/HTML/CSS web with login for users to upload their projects by categories and see other people's projects.
-                                        </p>
-                                    <p><a class="more-link" href="https://github.com/AlexLeandoer/Proyecto-Trueques" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            <hr class="divider" />
+                                    <div class="mb-2">
+                                        <span class="lang-es">Proyecto final para el Ciclo Superior de Desarrollo Web. Una web PHP/HTML/CSS con login para que los usuarios suban sus proyectos por categorías.</span>
+                                        <span class="lang-en d-none">Final project for the Web Design & Development Higher Course. A PHP/HTML/CSS web with login for users to upload their projects by categories.</span>
+                                    </div>
+                                    <p><a class="more-link" href="https://github.com/AlexLeandoer/Proyecto-Trueques" target="_blank"><i class="fas fa-external-link-alt"></i>Link</a></p>
+                                </div></div><hr class="divider" />
+                            
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://github.com/AlexLeandoer/libgdx-game" target="_blank">
                                 <img class="img-fluid project-image" src="assets/images/projects/project1.png" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://github.com/AlexLeandoer/libgdx-game" target="_blank">Android game (LibGDX)</a></h3>
-                                    <p class="mb-2">2D Platformer game made with LibGDX</p>
-                                    <p><a class="more-link" href="https://github.com/AlexLeandoer/libgdx-game" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
+                                    <div class="mb-2">
+                                        <span class="lang-es">Juego de plataformas 2D hecho con LibGDX.</span>
+                                        <span class="lang-en d-none">2D Platformer game made with LibGDX.</span>
+                                    </div>
+                                    <p><a class="more-link" href="https://github.com/AlexLeandoer/libgdx-game" target="_blank"><i class="fas fa-external-link-alt"></i>Link</a></p>
+                                </div></div><hr class="divider" />
 
-                            <hr class="divider" />
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://github.com/AlexLeandoer/Landing-page" target="_blank">
                                 <img class="img-fluid project-image" src="assets/images/projects/project4.png" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://github.com/AlexLeandoer/Landing-page" target="_blank">Landing page</a></h3>
-                                    <p class="mb-2">A simple landing page made with HTML5/Bootstrap and CSS3/SASS</p>
-                                    <p><a class="more-link" href="https://github.com/AlexLeandoer/Landing-page" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
+                                    <div class="mb-2">
+                                        <span class="lang-es">Una landing page simple hecha con HTML5/Bootstrap y CSS3/SASS.</span>
+                                        <span class="lang-en d-none">A simple landing page made with HTML5/Bootstrap and CSS3/SASS.</span>
+                                    </div>
+                                    <p><a class="more-link" href="https://github.com/AlexLeandoer/Landing-page" target="_blank"><i class="fas fa-external-link-alt"></i>Link</a></p>
+                                </div></div><hr class="divider" />
 
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://github.com/AlexLeandoer/Product-Template" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project2.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://github.com/AlexLeandoer/Product-Template" target="_blank">Product template</a></h3>
-                                    <p class="mb-2">Simple responsive product template made with Bootstrap and CSS3</p>
-                                    <p><a class="more-link" href="https://github.com/AlexLeandoer/Product-Template" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-
-                            <hr class="divider" />
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://github.com/AlexLeandoer/Proyecto-Unity" target="_blank">
                                 <img class="img-fluid project-image" src="assets/images/projects/project3.jpg" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://github.com/AlexLeandoer/Proyecto-Unity" target="_blank">Racing game (Unity)</a></h3>
-                                    <p class="mb-2">A small racing game made with Unity and C# scripts</p>
-                                    <p><a class="more-link" href="https://github.com/AlexLeandoer/Proyecto-Unity" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item
-                            <hr class="divider" />
-                            <div class="item row">
-                               <p class="center text-center">More coming soon...</p>
-                            </div>
-                            
-
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-
-                <section class="experience section">
+                                    <div class="mb-2">
+                                        <span class="lang-es">Pequeño juego de carreras hecho con Unity y C#.</span>
+                                        <span class="lang-en d-none">A small racing game made with Unity and C# scripts.</span>
+                                    </div>
+                                    <p><a class="more-link" href="https://github.com/AlexLeandoer/Proyecto-Unity" target="_blank"><i class="fas fa-external-link-alt"></i>Link</a></p>
+                                </div></div></div></div></section><section class="experience section">
                     <div class="section-inner">
-                        <h2 class="heading">Work Experience</h2>
+                        <h2 class="heading">
+                            <span class="lang-es">Experiencia Laboral</span>
+                            <span class="lang-en d-none">Work Experience</span>
+                        </h2>
                         <div class="content">
-                            <div class="item">
-                                <h3 class="title">Developer at Intercreaciones (Artebit)<span class="place"><span class="year"> (2018 - 2019)</span></h3>
-                                <p>Working with Xamarin and C# <a href="https://intercreaciones.com/">https://intercreaciones.com/</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Developer at Incorpora Marketing<span class="place"> <span class="year">(2019)</span></h3>
-                                <p>Working with Wordpress, Woocommerce and Prestashop <a href="https://incorporamarketing.es/">https://incorporamarketing.es/</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Freelancer<span class="place"> <span class="year">(2017 - Present)</span></h3>
-                            </div><!--//item-->
-
                             
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
+                            <div class="item">
+                                <h3 class="title">Desarrollador de WordPress - GESTORÍA MULTIMEDIA <span class="place"><span class="year">(Ene. 2025 - Actualidad)</span></span></h3>
+                                <div class="lang-es">
+                                    <p>Granada, Andalucía, España · Híbrido<br>
+                                    Desarrollo WordPress y Estrategias SEO.</p>
+                                </div>
+                                <div class="lang-en d-none">
+                                    <p>Granada, Spain · Hybrid<br>
+                                    WordPress Development and SEO strategies.</p>
+                                </div>
+                            </div><div class="item">
+                                <h3 class="title">Desarrollador Full Stack - Área F5 <span class="place"><span class="year">(Nov. 2020 - Abr. 2023)</span></span></h3>
+                                <div class="lang-es">
+                                    <p>Churriana de la Vega, Andalucía, España · Híbrido<br>
+                                    Desarrollo con Laravel, MySQL y WordPress.</p>
+                                </div>
+                                <div class="lang-en d-none">
+                                    <p>Churriana de la Vega, Spain · Hybrid<br>
+                                    Development with Laravel, MySQL and WordPress.</p>
+                                </div>
+                            </div><div class="item">
+                                <h3 class="title">
+                                    <span class="lang-es">Desarrollador Web Autónomo</span>
+                                    <span class="lang-en d-none">Freelance Web Developer</span>
+                                    <span class="place"><span class="year">(2018 - Nov. 2020)</span></span>
+                                </h3>
+                                <div class="lang-es"><p>Desarrollo de páginas web para clientes diversos.</p></div>
+                                <div class="lang-en d-none"><p>Web development for various clients.</p></div>
+                            </div><div class="item">
+                                <h3 class="title">Desarrollador WordPress - INCORPORA MARKETING <span class="place"><span class="year">(Jun. 2019 - Sept. 2019)</span></span></h3>
+                                <div class="lang-es">
+                                    <p>Granada, Andalucía, España · Prácticas<br>
+                                    Desarrollo Wordpress, Woocommerce y Prestashop.</p>
+                                </div>
+                                <div class="lang-en d-none">
+                                    <p>Granada, Spain · Internship<br>
+                                    Wordpress, Woocommerce and Prestashop development.</p>
+                                </div>
+                            </div><div class="item">
+                                <h3 class="title">Desarrollador de Aplicaciones - Intercreaciones <span class="place"><span class="year">(Sept. 2018 - Ene. 2019)</span></span></h3>
+                                <div class="lang-es">
+                                    <p>Granada, Andalucía, España · Prácticas<br>
+                                    Desarrollo Android, Xamarin y MySQL.</p>
+                                </div>
+                                <div class="lang-en d-none">
+                                    <p>Granada, Spain · Internship<br>
+                                    Android Development, Xamarin and MySQL.</p>
+                                </div>
+                            </div></div></div></section></div><div class="secondary col-lg-4 col-12">
                  <aside class="info aside section">
                     <div class="section-inner">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Granada, Spain</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">alconpla@gmail.com</a></li>
-                                <!-- <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.website.com</a></li> -->
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:alconpla@gmail.com">alconpla@gmail.com</a></li>
                             </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
+                        </div></div></aside><aside class="skills aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Skills</h2>
+                        <h2 class="heading">
+                            <span class="lang-es">Habilidades</span>
+                            <span class="lang-en d-none">Skills</span>
+                        </h2>
                         <div class="content">
-                            <!-- <p class="intro">
-                                These are the main languages I work with.</p> -->
                             <div class="skillset">
-                                <div class="item">
-                                    <h3 class="level-title">C#<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i>High level</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" style="max-width: 85%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i>Medium</span></h3>
+                                    <h3 class="level-title">Wordpress<span class="level-label"><i class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" style="max-width: 75%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3 &amp; PHP<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i>High level</span></h3>
+                                        <div class="level-bar-inner" style="max-width: 100%"></div>                                      
+                                    </div></div><div class="item">
+                                    <h3 class="level-title">HTML5, CSS3 &amp; PHP<span class="level-label"><i class="fas fa-info-circle"></i>High</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" style="max-width: 95%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Java<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i>Medium</span></h3>
+                                        <div class="level-bar-inner" style="max-width: 95%"></div>                                      
+                                    </div></div><div class="item">
+                                    <h3 class="level-title">Laravel<span class="level-label"><i class="fas fa-info-circle"></i>High</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner"style="max-width: 70%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Wordpress<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                        <div class="level-bar-inner" style="max-width: 85%"></div>                                      
+                                    </div></div><div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label"><i class="fas fa-info-circle"></i>Medium</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner"style="max-width: 100%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"><i class="fas fa-info-circle"></i>Basic</span></h3>
+                                        <div class="level-bar-inner" style="max-width: 75%"></div>                                      
+                                    </div></div><div class="item">
+                                    <h3 class="level-title">C# & Xamarin<span class="level-label"><i class="fas fa-info-circle"></i>Medium</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner"style="max-width: 55%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                
-                
-                <aside class="education aside section">
+                                        <div class="level-bar-inner" style="max-width: 70%"></div>                                      
+                                    </div></div></div>              
+                        </div></div></aside><aside class="education aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Education</h2>
+                        <h2 class="heading">
+                            <span class="lang-es">Estudios</span>
+                            <span class="lang-en d-none">Education</span>
+                        </h2>
                         <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> High School</h3>
-                                <h4 class="university">IES Generalife<span class="year"> (2010-2016)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Higher Education in Cross-platform development</h3>
-                                <h4 class="university">Certificate of Higher Education at C.E.S Cristo Rey<span class="year"> (2016-2018)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-school"></i> Web Design & Development course </h3>
-                                <h4 class="university">Escuela Arte Granada<span class="year"> (2019)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
                             
-                <aside class="languages aside section">
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Técnico Superior DAW</h3>
+                                <h4 class="university">IES Zaidín Vergeles <span class="year">(2019 - 2020)</span></h4>
+                            </div><div class="item">
+                                <h3 class="title"><i class="fas fa-school"></i> Web Design & Development</h3>
+                                <h4 class="university">Escuela Arte Granada <span class="year">(2019)</span></h4>
+                            </div><div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Desarrollo Multiplataforma (DAM)</h3>
+                                <h4 class="university">C.E.S Cristo Rey <span class="year">(2016-2018)</span></h4>
+                            </div><div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachillerato</h3>
+                                <h4 class="university">IES Generalife <span class="year">(2010-2016)</span></h4>
+                            </div></div></div></aside><aside class="languages aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
+                        <h2 class="heading">
+                            <span class="lang-es">Idiomas</span>
+                            <span class="lang-en d-none">Languages</span>
+                        </h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <!--item-->
                                 <li class="item">
-                                    <span class="title"><strong>Spanish:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Conversational Level<br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i><i class="fas fa-star-half"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>French:</strong></span>
-                                    <span class="level">Basic communication skills<br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> </span>
-                                </li><!--//item-->
-                                
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <aside class="credits aside section">
+                                    <span class="title"><strong>
+                                        <span class="lang-es">Español:</span>
+                                        <span class="lang-en d-none">Spanish:</span>
+                                    </strong></span>
+                                    <span class="level">
+                                        <span class="lang-es">Nativo</span>
+                                        <span class="lang-en d-none">Native Speaker</span> 
+                                        <br class="visible-sm visible-xs"/>
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                    </span>
+                                </li><li class="item">
+                                    <span class="title"><strong>
+                                        <span class="lang-es">Inglés:</span>
+                                        <span class="lang-en d-none">English:</span>
+                                    </strong></span>
+                                    <span class="level">
+                                        <span class="lang-es">Nivel Conversacional</span>
+                                        <span class="lang-en d-none">Conversational Level</span>
+                                        <br class="visible-xs"/>
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i><i class="fas fa-star-half"></i> 
+                                    </span>
+                                </li><li class="item">
+                                    <span class="title"><strong>
+                                        <span class="lang-es">Francés:</span>
+                                        <span class="lang-en d-none">French:</span>
+                                    </strong></span>
+                                    <span class="level">
+                                        <span class="lang-es">Básico</span>
+                                        <span class="lang-en d-none">Basic</span>
+                                        <br class="visible-xs"/>
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> 
+                                    </span>
+                                </li></ul>
+                        </div></div></aside><aside class="credits aside section">
                     <div class="section-inner">
                         <h2 class="heading">Credits</h2>
                         <div class="content">
@@ -287,25 +314,26 @@
                                 <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
                                 <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
                                 <li><a href="https://jquery.com/" target="_blank"><i class="fas fa-external-link-alt"></i>jQuery</a></li>
-                                <li><a href="https://itch.io/" target="_blank"><i class="fas fa-external-link-alt"></i>Itch.io (Game assets)</a></li>
-                                <li><a href="https://sass-lang.com/" target="_blank"><i class="fas fa-external-link-alt"></i>SASS</a></li>
                             </ul>
-                            
-                            <hr/>
-                            
-                            
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
- 
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+                        </div></div></aside></div></div></div><script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>        
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    
+    <script>
+        function toggleLanguage() {
+            // Obtenemos todos los elementos en español e inglés
+            var esElements = document.getElementsByClassName('lang-es');
+            var enElements = document.getElementsByClassName('lang-en');
+            
+            // Alternamos la visibilidad
+            for (var i = 0; i < esElements.length; i++) {
+                esElements[i].classList.toggle('d-none');
+            }
+            for (var i = 0; i < enElements.length; i++) {
+                enElements[i].classList.toggle('d-none');
+            }
+        }
+    </script>
 </body>
-</html> 
+</html>
